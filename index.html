@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Your page title-->
+    <title>Quizz !</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <img class="img-fixed" alt="Illustration fixed" src="images/fixed.png">
+
+    <!-- HEADER -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Personality test</h1>
+                    <p>Does your personality match your nationality ? <br />Take this fun quiz to find out if you were
+                        born in the right place !</p>
+                    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+                </div>
+                <div class="col-md-6">
+                    <img alt="Image of the jumbotron" src="./images/jumbotron.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- QUESTION 1  // Button-->
+        <div class="row" id="Q1">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Question 1</h3>
+                        <p class="question">Which shoes do you wear in everyday life?</p>
+                        <div class="form-group">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" onclick="Q([1,'i']);">Blundstone</button>
+                                <button type="button" class="btn btn-default" onclick="Q([1,'f']);">Stan Smith</button>
+                                <button type="button" class="btn btn-default" onclick="Q([1,'a']);">Sandals</button>
+                                <button type="button" class="btn btn-default" onclick="Q([1,'l']);">I wear shoes that
+                                    correspond to my wardrobe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTION 2 // Select Option -->
+        <div class="row" id="Q2">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Question 2</h3>
+                        <p class="question">At the restaurant, What do you order ?</p>
+                        <div class="form-group">
+                            <select class="form-control" id="selectQ2" onchange="Q(this.value);">
+                                <option>Select your answer here !</option>
+                                <option value="2a">A fat humberger is the best.</option>
+                                <option value="2i">Vegan food cause we have to “be kind for every kind”.</option>
+                                <option value="2l">I don’t care about the food, I just want to drink alcohol.</option>
+                                <option value="2f">It doesn’t matter, it just needs to be kosher.</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTION 3 // radio -->
+        <div class="row" id="Q3">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Question 3</h3>
+                        <p class="question">To hang out at Tel Aviv, What do you prefer ?</p>
+                        <label class="radio-inline">
+                            <input type="radio" onclick="Q([3,'f']);">A fancy rooftop bar with a lot
+                            of wine.
+                        </label><br />
+                        <label class="radio-inline"><input type="radio" onclick="Q([3,'l']);">A club with latin music
+                            and
+                            tequila.</label><br />
+                        <label class="radio-inline"><input type="radio" onclick="Q([3,'i']);">A psytrance party.</label><br />
+                        <label class="radio-inline"><input type="radio" onclick="Q([3,'a']);">A bar with rock music and
+
+                            interesting happy hour.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTION 4 // checkbox -->
+        <div class="row" id="Q4">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Question 4</h3>
+                        <p class="question">When I go to the dead sea, what do you do ? </p>
+                        <input type="checkbox" onclick="Q([4,'l']);"> I leave my house at 1pm, because anything
+                        earlier is too early.<br>
+                        <input type="checkbox" onclick="Q([4,'f']);"> I stay at a luxury hotel with a spa in
+                        front of the sea.<br>
+                        <input type="checkbox" onclick="Q([4,'a']);"> I’ll also try to go to Masada.<br>
+                        <input type="checkbox" onclick="Q([4,'i']);"> I have to put on a face mask.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTION 5 // checkbox -->
+        <div class="row" id="Q5">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Question 5</h3>
+                        <p class="question">When you eat at your mom’s place, What does she cooks ?</p>
+                        <div class="row flex">
+                            <div class="col-sm-6">
+                                <img onclick="Q([5,'f']);" src="./images/french.jpg" alt="Image Couscous" class="select-img">
+                            </div>
+                            <div class="col-sm-6">
+                                <img onclick="Q([5,'a']);" src="./images/american.jpg" alt="Image Pastrami sandwich"
+                                    class="select-img">
+                            </div>
+                        </div>
+                        <div class="row flex">
+                            <div class="col-sm-6">
+                                <img onclick="Q([5,'i']);" src="./images/israeli.jpg" alt="Image Schnitzel with ptitim"
+                                    class="select-img">
+                            </div>
+                            <div class="col-sm-6">
+                                <img onclick="Q([5,'l']);" src="./images/latinos.jpg" alt="Image Gefilte Fish a la Veracruzana"
+                                    class="select-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULT // progress bar -->
+        <div class="row" id="Q6">
+            <div class="col-sm-10">
+                <div class="thumbnail">
+                    <h2 id="text-result"></h2>
+                    <div class="progress">
+                        <div class="barProgress">
+                            <div id="israeliBar">Israeli vibes score </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="barProgress">
+                            <div id="frenchBar">French vibes score</div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="barProgress">
+                            <div id="americanBar">American vibes score</div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="barProgress">
+                            <div id="latinoBar">Latino vibes score</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="sitefooter" class="row">
+        <div class="container text-center">
+            <p>Product and Designed by Emilie Layani</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js""></script>
+ </body>
+</html>

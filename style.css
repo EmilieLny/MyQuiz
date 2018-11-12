@@ -1,0 +1,121 @@
+body {
+    background-color: #ec9eb8;
+    color: #181c52;
+}
+.img-fixed {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    bottom: 19px;
+    z-index: -100;
+    filter: drop-shadow(0px 0px 100px #181c52b3);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+h1 {
+    color: #181c52;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+.jumbotron {
+    background-color: #fcccdc;
+    box-shadow: 0px 0px 10px #181c52;
+}
+.jumbotron img {
+    max-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.thumbnail{
+    border: 5px solid #181c52;
+    border-radius: 0px;
+    background-color:#fafafa;
+    padding: 5%;
+    margin-bottom: 70px;
+}
+.question {
+    color: #ec5946;
+    font-weight: bold;
+    font-size: 17px;
+}
+.select-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+#Q1 {
+    display: block;
+}
+#Q2 {
+    display: none;
+}
+#Q3 {
+    display: none;
+}
+#Q4 {
+    display: none;
+}
+#Q5 {
+    display: none;
+}
+#Q6{
+    display: none; 
+}
+
+
+.sitefooter {
+    background-color: #fcccdc;
+    box-shadow: 0px 0px 10px #181c52;
+    color: #181c52;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+}
+.sitefooter p{
+    margin: 10px;
+}
+
+
+
+
+
+.barProgress {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+}
+#israeliBar {
+    width: 1%;
+    height: 30px;
+    background-color: #181c52;
+}
+#frenchBar {
+    width: 1%;
+    height: 30px;
+    background-color: #62314e;
+}
+#americanBar {
+    width: 1%;
+    height: 30px;
+    background-color: #ae4749;
+}
+#latinoBar {
+    width: 1%;
+    height: 30px;
+    background-color: #ea5946;
+}
